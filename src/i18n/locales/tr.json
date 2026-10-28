@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "convert": "Dönüştür",
+    "settings": "Ayarlar",
+    "about": "Hakkında"
+  },
+  "home": {
+    "tagline": "Her şeyi dönüştür. Gizlice.",
+    "subtitle": "Tüm dönüşümler makinenizde yerel olarak gerçekleşir — yükleme yok, sunucu yok.",
+    "categories": {
+      "image": "Görüntüler",
+      "audio": "Ses",
+      "video": "Video",
+      "document": "Belgeler"
+    },
+    "formats": "{{count}} format destekleniyor",
+    "dropFiles": "Dosyaları buraya bırakın",
+    "clickOrDrop": "Dosya seçmek için tıklayın veya sürükleyip bırakın",
+    "supportedFormats": "Desteklenen formatlar"
+  },
+  "convert": {
+    "convertAll": "Tümünü Dönüştür",
+    "downloadAll": "Tümünü İndir",
+    "removeAll": "Tümünü Kaldır",
+    "converting": "Dönüştürülüyor…",
+    "done": "Tamamlandı",
+    "error": "Hata",
+    "idle": "Bekliyor",
+    "cancelled": "İptal Edildi",
+    "download": "İndir",
+    "remove": "Kaldır",
+    "cancel": "İptal",
+    "progress": "{{current}} / {{total}} dosya",
+    "outputFormat": "Çıkış formatı",
+    "noFiles": "Hiçbir dosya seçilmedi",
+    "addFiles": "Başlamak için dosya ekleyin"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "appearance": {
+      "title": "Görünüm",
+      "theme": "Tema",
+      "light": "Açık",
+      "dark": "Koyu",
+      "system": "Sistem",
+      "language": "Dil"
+    },
+    "conversion": {
+      "title": "Dönüşüm",
+      "defaultFormats": "Varsayılan formatlar",
+      "image": "Görüntüler",
+      "audio": "Ses",
+      "video": "Video",
+      "document": "Belgeler",
+      "quality": "Görüntü kalitesi",
+      "audioBitrate": "Ses bit hızı",
+      "sampleRate": "Örnekleme hızı",
+      "preserveMetadata": "Meta verileri koru",
+      "useDefaults": "Varsayılanları otomatik olarak kullan"
+    }
+  },
+  "errors": {
+    "conversionFailed": "Dönüşüm başarısız: {{message}}",
+    "unsupportedFormat": "Desteklenmeyen format: {{format}}",
+    "fileReadError": "Dosya okunamadı",
+    "saveError": "Dosya kaydedilemedi"
+  },
+  "common": {
+    "ok": "Tamam",
+    "cancel": "İptal",
+    "close": "Kapat",
+    "save": "Kaydet",
+    "loading": "Yükleniyor…"
+  }
+}

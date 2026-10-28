@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "convert": "Konversi",
+    "settings": "Pengaturan",
+    "about": "Tentang"
+  },
+  "home": {
+    "tagline": "Konversi apa saja. Secara pribadi.",
+    "subtitle": "Semua konversi dilakukan secara lokal di komputer Anda — tanpa unggahan, tanpa server.",
+    "categories": {
+      "image": "Gambar",
+      "audio": "Audio",
+      "video": "Video",
+      "document": "Dokumen"
+    },
+    "formats": "{{count}} format didukung",
+    "dropFiles": "Letakkan file di sini",
+    "clickOrDrop": "Klik untuk memilih file atau seret & lepas",
+    "supportedFormats": "Format yang didukung"
+  },
+  "convert": {
+    "convertAll": "Konversi Semua",
+    "downloadAll": "Unduh Semua",
+    "removeAll": "Hapus Semua",
+    "converting": "Mengonversi…",
+    "done": "Selesai",
+    "error": "Kesalahan",
+    "idle": "Menunggu",
+    "cancelled": "Dibatalkan",
+    "download": "Unduh",
+    "remove": "Hapus",
+    "cancel": "Batal",
+    "progress": "{{current}} / {{total}} file",
+    "outputFormat": "Format keluaran",
+    "noFiles": "Tidak ada file yang dipilih",
+    "addFiles": "Tambahkan file untuk memulai"
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "appearance": {
+      "title": "Tampilan",
+      "theme": "Tema",
+      "light": "Terang",
+      "dark": "Gelap",
+      "system": "Sistem",
+      "language": "Bahasa"
+    },
+    "conversion": {
+      "title": "Konversi",
+      "defaultFormats": "Format default",
+      "image": "Gambar",
+      "audio": "Audio",
+      "video": "Video",
+      "document": "Dokumen",
+      "quality": "Kualitas gambar",
+      "audioBitrate": "Bitrate audio",
+      "sampleRate": "Laju sampel",
+      "preserveMetadata": "Pertahankan metadata",
+      "useDefaults": "Gunakan default secara otomatis"
+    }
+  },
+  "errors": {
+    "conversionFailed": "Konversi gagal: {{message}}",
+    "unsupportedFormat": "Format tidak didukung: {{format}}",
+    "fileReadError": "Tidak dapat membaca file",
+    "saveError": "Tidak dapat menyimpan file"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Batal",
+    "close": "Tutup",
+    "save": "Simpan",
+    "loading": "Memuat…"
+  }
+}

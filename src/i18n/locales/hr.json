@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Početna",
+    "convert": "Pretvori",
+    "settings": "Postavke",
+    "about": "O aplikaciji"
+  },
+  "home": {
+    "tagline": "Pretvori bilo što. Privatno.",
+    "subtitle": "Sve pretvorbe odvijaju se lokalno na vašem računalu — bez prijenosa, bez poslužitelja.",
+    "categories": {
+      "image": "Slike",
+      "audio": "Audio",
+      "video": "Video",
+      "document": "Dokumenti"
+    },
+    "formats": "{{count}} podržanih formata",
+    "dropFiles": "Ovdje ispustite datoteke",
+    "clickOrDrop": "Kliknite za odabir datoteka ili povucite i ispustite",
+    "supportedFormats": "Podržani formati"
+  },
+  "convert": {
+    "convertAll": "Pretvori sve",
+    "downloadAll": "Preuzmi sve",
+    "removeAll": "Ukloni sve",
+    "converting": "Pretvaranje…",
+    "done": "Gotovo",
+    "error": "Pogreška",
+    "idle": "Čekanje",
+    "cancelled": "Otkazano",
+    "download": "Preuzmi",
+    "remove": "Ukloni",
+    "cancel": "Odustani",
+    "progress": "{{current}} / {{total}} datoteka",
+    "outputFormat": "Izlazni format",
+    "noFiles": "Nema odabranih datoteka",
+    "addFiles": "Dodajte datoteke za početak"
+  },
+  "settings": {
+    "title": "Postavke",
+    "appearance": {
+      "title": "Izgled",
+      "theme": "Tema",
+      "light": "Svijetla",
+      "dark": "Tamna",
+      "system": "Sustavna",
+      "language": "Jezik"
+    },
+    "conversion": {
+      "title": "Pretvorba",
+      "defaultFormats": "Zadani formati",
+      "image": "Slike",
+      "audio": "Audio",
+      "video": "Video",
+      "document": "Dokumenti",
+      "quality": "Kvaliteta slike",
+      "audioBitrate": "Audio bitrate",
+      "sampleRate": "Frekvencija uzorkovanja",
+      "preserveMetadata": "Zadrži metapodatke",
+      "useDefaults": "Automatski koristi zadane postavke"
+    }
+  },
+  "errors": {
+    "conversionFailed": "Pretvorba nije uspjela: {{message}}",
+    "unsupportedFormat": "Nepodržani format: {{format}}",
+    "fileReadError": "Nije moguće pročitati datoteku",
+    "saveError": "Nije moguće spremiti datoteku"
+  },
+  "common": {
+    "ok": "U redu",
+    "cancel": "Odustani",
+    "close": "Zatvori",
+    "save": "Spremi",
+    "loading": "Učitavanje…"
+  }
+}

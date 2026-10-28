@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+src-tauri/target/
+
+# Tauri generated files
+src-tauri/gen/
+# Sidecar binaries — downloaded via `pnpm setup`, bundled in CI
+src-tauri/binaries/
+
+# Test outputs
+coverage/
+playwright-report/
+test-results/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Type-check info
+*.tsbuildinfo
+
+# Task scratch and generated deliverables
+work/
+outputs/
+src-tauri/native-bin/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Local personal file-management scripts
+/audit_video_tree.py
+/update_rename_log.py

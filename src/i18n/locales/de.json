@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "convert": "Konvertieren",
+    "settings": "Einstellungen",
+    "about": "Über"
+  },
+  "home": {
+    "tagline": "Alles konvertieren. Privat.",
+    "subtitle": "Alle Konvertierungen erfolgen lokal — keine Uploads, keine Server.",
+    "categories": {
+      "image": "Bilder",
+      "audio": "Audio",
+      "video": "Video",
+      "document": "Dokumente"
+    },
+    "formats": "{{count}} unterstützte Formate",
+    "dropFiles": "Dateien hier ablegen",
+    "clickOrDrop": "Klicken oder Dateien hierher ziehen",
+    "supportedFormats": "Unterstützte Formate"
+  },
+  "convert": {
+    "convertAll": "Alle konvertieren",
+    "downloadAll": "Alle herunterladen",
+    "removeAll": "Alle entfernen",
+    "converting": "Konvertierung…",
+    "done": "Fertig",
+    "error": "Fehler",
+    "idle": "Warten",
+    "cancelled": "Abgebrochen",
+    "download": "Herunterladen",
+    "remove": "Entfernen",
+    "cancel": "Abbrechen",
+    "progress": "{{current}} / {{total}} Dateien",
+    "outputFormat": "Ausgabeformat",
+    "noFiles": "Keine Dateien ausgewählt",
+    "addFiles": "Dateien hinzufügen, um zu beginnen"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "appearance": {
+      "title": "Erscheinungsbild",
+      "theme": "Thema",
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System",
+      "language": "Sprache"
+    },
+    "conversion": {
+      "title": "Konvertierung",
+      "defaultFormats": "Standardformate",
+      "image": "Bilder",
+      "audio": "Audio",
+      "video": "Video",
+      "document": "Dokumente",
+      "quality": "Bildqualität",
+      "audioBitrate": "Audio-Bitrate",
+      "sampleRate": "Abtastrate",
+      "preserveMetadata": "Metadaten beibehalten",
+      "useDefaults": "Standardformate automatisch verwenden"
+    }
+  },
+  "errors": {
+    "conversionFailed": "Konvertierung fehlgeschlagen: {{message}}",
+    "unsupportedFormat": "Nicht unterstütztes Format: {{format}}",
+    "fileReadError": "Datei konnte nicht gelesen werden",
+    "saveError": "Datei konnte nicht gespeichert werden"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Abbrechen",
+    "close": "Schließen",
+    "save": "Speichern",
+    "loading": "Laden…"
+  }
+}

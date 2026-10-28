@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "convert": "変換",
+    "settings": "設定",
+    "about": "このアプリについて"
+  },
+  "home": {
+    "tagline": "何でも変換。プライベートに。",
+    "subtitle": "すべての変換はお使いのマシン上でローカルに行われます — アップロードなし、サーバーなし。",
+    "categories": {
+      "image": "画像",
+      "audio": "オーディオ",
+      "video": "動画",
+      "document": "ドキュメント"
+    },
+    "formats": "{{count}} 種類のフォーマットに対応",
+    "dropFiles": "ここにファイルをドロップ",
+    "clickOrDrop": "クリックしてファイルを選択するか、ドラッグ＆ドロップ",
+    "supportedFormats": "対応フォーマット"
+  },
+  "convert": {
+    "convertAll": "すべて変換",
+    "downloadAll": "すべてダウンロード",
+    "removeAll": "すべて削除",
+    "converting": "変換中…",
+    "done": "完了",
+    "error": "エラー",
+    "idle": "待機中",
+    "cancelled": "キャンセル済み",
+    "download": "ダウンロード",
+    "remove": "削除",
+    "cancel": "キャンセル",
+    "progress": "{{current}} / {{total}} ファイル",
+    "outputFormat": "出力フォーマット",
+    "noFiles": "ファイルが選択されていません",
+    "addFiles": "ファイルを追加して開始"
+  },
+  "settings": {
+    "title": "設定",
+    "appearance": {
+      "title": "外観",
+      "theme": "テーマ",
+      "light": "ライト",
+      "dark": "ダーク",
+      "system": "システム",
+      "language": "言語"
+    },
+    "conversion": {
+      "title": "変換",
+      "defaultFormats": "デフォルトフォーマット",
+      "image": "画像",
+      "audio": "オーディオ",
+      "video": "動画",
+      "document": "ドキュメント",
+      "quality": "画像品質",
+      "audioBitrate": "オーディオビットレート",
+      "sampleRate": "サンプルレート",
+      "preserveMetadata": "メタデータを保持",
+      "useDefaults": "デフォルトを自動的に使用"
+    }
+  },
+  "errors": {
+    "conversionFailed": "変換に失敗しました: {{message}}",
+    "unsupportedFormat": "未対応のフォーマット: {{format}}",
+    "fileReadError": "ファイルを読み取れませんでした",
+    "saveError": "ファイルを保存できませんでした"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "キャンセル",
+    "close": "閉じる",
+    "save": "保存",
+    "loading": "読み込み中…"
+  }
+}

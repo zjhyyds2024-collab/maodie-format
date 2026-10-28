@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Početna",
+    "convert": "Konvertuj",
+    "settings": "Postavke",
+    "about": "O aplikaciji"
+  },
+  "home": {
+    "tagline": "Konvertuj bilo šta. Privatno.",
+    "subtitle": "Sve konverzije se odvijaju lokalno na vašem računaru — bez otpremanja, bez servera.",
+    "categories": {
+      "image": "Slike",
+      "audio": "Audio",
+      "video": "Video",
+      "document": "Dokumenti"
+    },
+    "formats": "{{count}} podržanih formata",
+    "dropFiles": "Prevucite fajlove ovdje",
+    "clickOrDrop": "Kliknite za odabir fajlova ili prevucite i ispustite",
+    "supportedFormats": "Podržani formati"
+  },
+  "convert": {
+    "convertAll": "Konvertuj sve",
+    "downloadAll": "Preuzmi sve",
+    "removeAll": "Ukloni sve",
+    "converting": "Konvertovanje…",
+    "done": "Gotovo",
+    "error": "Greška",
+    "idle": "Čekanje",
+    "cancelled": "Otkazano",
+    "download": "Preuzmi",
+    "remove": "Ukloni",
+    "cancel": "Otkaži",
+    "progress": "{{current}} / {{total}} fajlova",
+    "outputFormat": "Izlazni format",
+    "noFiles": "Nema odabranih fajlova",
+    "addFiles": "Dodajte fajlove za početak"
+  },
+  "settings": {
+    "title": "Postavke",
+    "appearance": {
+      "title": "Izgled",
+      "theme": "Tema",
+      "light": "Svijetla",
+      "dark": "Tamna",
+      "system": "Sistemska",
+      "language": "Jezik"
+    },
+    "conversion": {
+      "title": "Konverzija",
+      "defaultFormats": "Zadani formati",
+      "image": "Slike",
+      "audio": "Audio",
+      "video": "Video",
+      "document": "Dokumenti",
+      "quality": "Kvalitet slike",
+      "audioBitrate": "Audio bitrate",
+      "sampleRate": "Frekvencija uzorkovanja",
+      "preserveMetadata": "Sačuvaj metapodatke",
+      "useDefaults": "Automatski koristi zadane postavke"
+    }
+  },
+  "errors": {
+    "conversionFailed": "Konverzija nije uspjela: {{message}}",
+    "unsupportedFormat": "Nepodržani format: {{format}}",
+    "fileReadError": "Nije moguće pročitati fajl",
+    "saveError": "Nije moguće sačuvati fajl"
+  },
+  "common": {
+    "ok": "U redu",
+    "cancel": "Otkaži",
+    "close": "Zatvori",
+    "save": "Sačuvaj",
+    "loading": "Učitavanje…"
+  }
+}

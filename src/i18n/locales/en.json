@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Home",
+    "convert": "Convert",
+    "settings": "Settings",
+    "about": "About"
+  },
+  "home": {
+    "tagline": "Convert anything. Privately.",
+    "subtitle": "All conversions happen locally on your machine — no uploads, no servers.",
+    "categories": {
+      "image": "Images",
+      "audio": "Audio",
+      "video": "Video",
+      "document": "Documents"
+    },
+    "formats": "{{count}} formats supported",
+    "dropFiles": "Drop files here",
+    "clickOrDrop": "Click to select files or drag & drop",
+    "supportedFormats": "Supported formats"
+  },
+  "convert": {
+    "convertAll": "Convert All",
+    "downloadAll": "Download All",
+    "removeAll": "Remove All",
+    "converting": "Converting…",
+    "done": "Done",
+    "error": "Error",
+    "idle": "Waiting",
+    "cancelled": "Cancelled",
+    "download": "Download",
+    "remove": "Remove",
+    "cancel": "Cancel",
+    "progress": "{{current}} / {{total}} files",
+    "outputFormat": "Output format",
+    "noFiles": "No files selected",
+    "addFiles": "Add files to get started"
+  },
+  "settings": {
+    "title": "Settings",
+    "appearance": {
+      "title": "Appearance",
+      "theme": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System",
+      "language": "Language"
+    },
+    "conversion": {
+      "title": "Conversion",
+      "defaultFormats": "Default formats",
+      "image": "Images",
+      "audio": "Audio",
+      "video": "Video",
+      "document": "Documents",
+      "quality": "Image quality",
+      "audioBitrate": "Audio bitrate",
+      "sampleRate": "Sample rate",
+      "preserveMetadata": "Preserve metadata",
+      "useDefaults": "Use defaults automatically"
+    }
+  },
+  "errors": {
+    "conversionFailed": "Conversion failed: {{message}}",
+    "unsupportedFormat": "Unsupported format: {{format}}",
+    "fileReadError": "Could not read file",
+    "saveError": "Could not save file"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "close": "Close",
+    "save": "Save",
+    "loading": "Loading…"
+  }
+}

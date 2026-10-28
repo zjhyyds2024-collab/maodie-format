@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "主页",
+    "convert": "转换",
+    "settings": "设置",
+    "about": "关于"
+  },
+  "home": {
+    "tagline": "转换一切。私密进行。",
+    "subtitle": "所有转换均在您的本地设备上完成 — 无需上传，无需服务器。",
+    "categories": {
+      "image": "图片",
+      "audio": "音频",
+      "video": "视频",
+      "document": "文档"
+    },
+    "formats": "支持 {{count}} 种格式",
+    "dropFiles": "将文件拖放到此处",
+    "clickOrDrop": "点击选择文件或拖放",
+    "supportedFormats": "支持的格式"
+  },
+  "convert": {
+    "convertAll": "全部转换",
+    "downloadAll": "全部下载",
+    "removeAll": "全部移除",
+    "converting": "转换中…",
+    "done": "完成",
+    "error": "错误",
+    "idle": "等待中",
+    "cancelled": "已取消",
+    "download": "下载",
+    "remove": "移除",
+    "cancel": "取消",
+    "progress": "{{current}} / {{total}} 个文件",
+    "outputFormat": "输出格式",
+    "noFiles": "未选择文件",
+    "addFiles": "添加文件以开始"
+  },
+  "settings": {
+    "title": "设置",
+    "appearance": {
+      "title": "外观",
+      "theme": "主题",
+      "light": "浅色",
+      "dark": "深色",
+      "system": "跟随系统",
+      "language": "语言"
+    },
+    "conversion": {
+      "title": "转换",
+      "defaultFormats": "默认格式",
+      "image": "图片",
+      "audio": "音频",
+      "video": "视频",
+      "document": "文档",
+      "quality": "图片质量",
+      "audioBitrate": "音频比特率",
+      "sampleRate": "采样率",
+      "preserveMetadata": "保留元数据",
+      "useDefaults": "自动使用默认值"
+    }
+  },
+  "errors": {
+    "conversionFailed": "转换失败：{{message}}",
+    "unsupportedFormat": "不支持的格式：{{format}}",
+    "fileReadError": "无法读取文件",
+    "saveError": "无法保存文件"
+  },
+  "common": {
+    "ok": "确定",
+    "cancel": "取消",
+    "close": "关闭",
+    "save": "保存",
+    "loading": "加载中…"
+  }
+}

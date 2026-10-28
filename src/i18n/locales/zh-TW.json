@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "首頁",
+    "convert": "轉換",
+    "settings": "設定",
+    "about": "關於"
+  },
+  "home": {
+    "tagline": "轉換任何東西。私密進行。",
+    "subtitle": "所有轉換均在您的本機裝置上完成 — 無需上傳，無需伺服器。",
+    "categories": {
+      "image": "圖片",
+      "audio": "音訊",
+      "video": "影片",
+      "document": "文件"
+    },
+    "formats": "支援 {{count}} 種格式",
+    "dropFiles": "將檔案拖放到此處",
+    "clickOrDrop": "點擊選取檔案或拖放",
+    "supportedFormats": "支援的格式"
+  },
+  "convert": {
+    "convertAll": "全部轉換",
+    "downloadAll": "全部下載",
+    "removeAll": "全部移除",
+    "converting": "轉換中…",
+    "done": "完成",
+    "error": "錯誤",
+    "idle": "等待中",
+    "cancelled": "已取消",
+    "download": "下載",
+    "remove": "移除",
+    "cancel": "取消",
+    "progress": "{{current}} / {{total}} 個檔案",
+    "outputFormat": "輸出格式",
+    "noFiles": "未選取檔案",
+    "addFiles": "新增檔案以開始"
+  },
+  "settings": {
+    "title": "設定",
+    "appearance": {
+      "title": "外觀",
+      "theme": "主題",
+      "light": "淺色",
+      "dark": "深色",
+      "system": "跟隨系統",
+      "language": "語言"
+    },
+    "conversion": {
+      "title": "轉換",
+      "defaultFormats": "預設格式",
+      "image": "圖片",
+      "audio": "音訊",
+      "video": "影片",
+      "document": "文件",
+      "quality": "圖片品質",
+      "audioBitrate": "音訊位元率",
+      "sampleRate": "取樣率",
+      "preserveMetadata": "保留中繼資料",
+      "useDefaults": "自動使用預設值"
+    }
+  },
+  "errors": {
+    "conversionFailed": "轉換失敗：{{message}}",
+    "unsupportedFormat": "不支援的格式：{{format}}",
+    "fileReadError": "無法讀取檔案",
+    "saveError": "無法儲存檔案"
+  },
+  "common": {
+    "ok": "確定",
+    "cancel": "取消",
+    "close": "關閉",
+    "save": "儲存",
+    "loading": "載入中…"
+  }
+}

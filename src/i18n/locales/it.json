@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "home": "Home",
+    "convert": "Converti",
+    "settings": "Impostazioni",
+    "about": "Informazioni"
+  },
+  "home": {
+    "tagline": "Converti qualsiasi cosa. Privatamente.",
+    "subtitle": "Tutte le conversioni avvengono localmente sul tuo computer — nessun caricamento, nessun server.",
+    "categories": {
+      "image": "Immagini",
+      "audio": "Audio",
+      "video": "Video",
+      "document": "Documenti"
+    },
+    "formats": "{{count}} formati supportati",
+    "dropFiles": "Trascina i file qui",
+    "clickOrDrop": "Clicca per selezionare file o trascina e rilascia",
+    "supportedFormats": "Formati supportati"
+  },
+  "convert": {
+    "convertAll": "Converti tutto",
+    "downloadAll": "Scarica tutto",
+    "removeAll": "Rimuovi tutto",
+    "converting": "Conversione in corso…",
+    "done": "Completato",
+    "error": "Errore",
+    "idle": "In attesa",
+    "cancelled": "Annullato",
+    "download": "Scarica",
+    "remove": "Rimuovi",
+    "cancel": "Annulla",
+    "progress": "{{current}} / {{total}} file",
+    "outputFormat": "Formato di output",
+    "noFiles": "Nessun file selezionato",
+    "addFiles": "Aggiungi file per iniziare"
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "appearance": {
+      "title": "Aspetto",
+      "theme": "Tema",
+      "light": "Chiaro",
+      "dark": "Scuro",
+      "system": "Sistema",
+      "language": "Lingua"
+    },
+    "conversion": {
+      "title": "Conversione",
+      "defaultFormats": "Formati predefiniti",
+      "image": "Immagini",
+      "audio": "Audio",
+      "video": "Video",
+      "document": "Documenti",
+      "quality": "Qualità immagine",
+      "audioBitrate": "Bitrate audio",
+      "sampleRate": "Frequenza di campionamento",
+      "preserveMetadata": "Mantieni metadati",
+      "useDefaults": "Usa i valori predefiniti automaticamente"
+    }
+  },
+  "errors": {
+    "conversionFailed": "Conversione non riuscita: {{message}}",
+    "unsupportedFormat": "Formato non supportato: {{format}}",
+    "fileReadError": "Impossibile leggere il file",
+    "saveError": "Impossibile salvare il file"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Annulla",
+    "close": "Chiudi",
+    "save": "Salva",
+    "loading": "Caricamento…"
+  }
+}
