@@ -1,0 +1,101 @@
+name: Publish prepared preview
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publish-prepared-preview
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify prepared source and application archives
+        shell: python
+        run: |
+          import base64, hashlib, os, pathlib, zipfile, shutil
+          root = pathlib.Path.cwd()
+          output = pathlib.Path(os.environ['RUNNER_TEMP']) / 'maodie-preview'
+          output.mkdir()
+          archives = {
+            'source': ('maodie-format-1.7.0-preview.1-source.zip', 'fa64596edd19d0b37de40277dc0b93fd0e2168ecf71ed632edf5eab1d7885930'),
+            'app': ('maodie-format-1.7.0-macos-arm64-preview.zip', '1bec88e7aa614d27509e58382dd211b28c92b62eef71b7e0f1899f05b9dcd963'),
+          }
+          sums = []
+          for kind, (name, expected) in archives.items():
+              parts = sorted((root / '.publication').glob(kind + '-*.b64'))
+              if len(parts) != 8:
+                  raise RuntimeError(f'{kind}: expected 8 parts, found {len(parts)}')
+              encoded = ''.join(''.join(p.read_text().split()) for p in parts)
+              data = base64.b64decode(encoded, validate=True)
+              digest = hashlib.sha256(data).hexdigest()
+              if digest != expected:
+                  raise RuntimeError(f'{kind}: checksum mismatch')
+              (output / name).write_bytes(data)
+              sums.append(f'{digest}  {name}')
+          (output / 'SHA256SUMS.txt').write_text('\n'.join(sums) + '\n')
+          prefix = 'maodie-format-1.7.0-preview.1/'
+          with zipfile.ZipFile(output / archives['source'][0]) as archive:
+              count = 0
+              for entry in archive.infolist():
+                  if entry.is_dir():
+                      continue
+                  if not entry.filename.startswith(prefix):
+                      raise RuntimeError('Unexpected archive root')
+                  relative = pathlib.PurePosixPath(entry.filename[len(prefix):])
+                  if relative.is_absolute() or '..' in relative.parts or '.git' in relative.parts:
+                      raise RuntimeError('Unsafe archive path')
+                  count += 1
+                  if str(relative).startswith('.github/workflows/'):
+                      # Workflows are committed through the owner's web session.
+                      existing = root / str(relative)
+                      if existing.is_file() and existing.read_bytes() != archive.read(entry):
+                          raise RuntimeError(f'Workflow content mismatch: {relative}')
+                      continue
+                  target = root / str(relative)
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(archive.read(entry))
+                  mode = entry.external_attr >> 16
+                  target.chmod(0o755 if mode & 0o111 else 0o644)
+          if count != 193:
+              raise RuntimeError(f'Expected 193 source files, found {count}')
+          shutil.rmtree(root / '.publication')
+          notes = '''耄耋格式 1.7.0 预览版（macOS 14+ / Apple Silicon）
+
+          - 使用用户指定的透明底猫头图标。
+          - 支持本地图片、音视频、Office、PDF、OCR、压缩及已接入的音乐格式处理。
+          - ZIP 内附应用、引擎安装脚本、中文安装说明、README、NOTICE 和 AGPL 许可证。
+          - 需要另行安装 FFmpeg / ImageMagick / Pandoc / Python 转换引擎，Office 转换另需 LibreOffice。
+          - 仅 ad-hoc 签名，没有 Apple 开发者签名或公证，尚未通过干净 Mac 安装验收；这是预览版。
+          - 基于 Sikander RAVATE 的 VERT Desktop，AGPL-3.0；第三方归属保留在源码中。
+
+          源码包与安装包均按发布前记录的 SHA-256 校验，校验文件随本版本提供。
+          '''
+          (output / 'release-notes.md').write_text(notes)
+      - name: Commit complete source snapshot
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --all
+          git -c core.whitespace=-blank-at-eof diff --cached --check
+          git commit -m 'Publish complete 耄耋格式 1.7.0 source snapshot'
+          git push origin HEAD:main
+      - name: Publish preview release and verified downloads
+        shell: bash
+        run: |
+          gh release create v1.7.0-preview.1 \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$(git rev-parse HEAD)" \
+            --title '耄耋格式 1.7.0 预览版' \
+            --notes-file "$RUNNER_TEMP/maodie-preview/release-notes.md" \
+            --prerelease \
+            "$RUNNER_TEMP/maodie-preview/maodie-format-1.7.0-macos-arm64-preview.zip" \
+            "$RUNNER_TEMP/maodie-preview/maodie-format-1.7.0-preview.1-source.zip" \
+            "$RUNNER_TEMP/maodie-preview/SHA256SUMS.txt"
