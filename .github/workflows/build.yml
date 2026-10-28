@@ -1,0 +1,32 @@
+name: Build macOS preview
+# Manual preview artifact; no automatic release until clean-machine validation.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+      - name: Build app
+        run: |
+          test "$(uname -m)" = arm64
+          bash scripts/build-mac.sh
+      - name: Archive preview with installation instructions
+        run: |
+          mkdir -p preview
+          ditto -c -k --sequesterRsrc --keepParent 'src-tauri/target/release/bundle/macos/耄耋格式.app' preview/maodie-format-macos-arm64.zip
+          cp README.md NOTICE.md LICENSE preview/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: maodie-format-macos-arm64-preview
+          path: preview/
